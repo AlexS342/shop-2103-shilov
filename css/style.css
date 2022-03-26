@@ -1,9 +1,15 @@
 /*Создаем переменные*/
 :root{
     --black-bkg: #222222;
+    --black-color: #222222;
     --pink-bkg: #F1E4E6;
     --pink-color: #F16D7F;
     --sales-bkg: #4e4544;
+    --sub-title: #9F9F9F;
+    --card-bkg: #F8F8F8;
+    --card-color: #5D5D5D;
+    --button-color: #F26376;
+
 }
 /*Для тега body прописываем наиболее распространеные стили*/
 body{
@@ -80,6 +86,7 @@ body{
     line-height: 57px;
     text-transform: uppercase;
     margin-left: 92px;
+    color: var(--black-color);
 }
 
 .brand__title-lower{
@@ -148,3 +155,89 @@ body{
     text-transform: uppercase;
     color: var(--pink-color);
 }
+
+.poducts{
+    margin-top: 96px;
+}
+
+.products__title{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--black-color);
+}
+
+.products__sub-title{
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--sub-title);
+    margin-top: 6px;
+}
+
+.products__list{
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products__item{
+    width: 360px;
+    margin-bottom: 30px;
+    background-color: var(--card-bkg);
+}
+
+.products__item-title{
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 24px 18px 0 18px;
+}
+
+.products__item-text{
+    font-weight: 300;
+    line-height: 17px;
+    text-align: left;
+    color: var(--card-color);
+    margin: 12px 18px 0 18px;
+}
+
+.products__item-price{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: var(--button-color);
+    margin: 18px;
+}
+
+.products__button-wpr{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.products__button{
+    height: 47px;
+    width: 211px;
+    border: 1px solid #FF6A6A;
+    background: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    color: var(--button-color);
+    text-transform: capitalize;
+}
+
+
+
+
+

@@ -3,6 +3,7 @@
     --black-bkg: #222222;
     --pink-bkg: #F1E4E6;
     --pink-color: #F16D7F;
+    --sales-bkg: #4e4544;
 }
 /*Для тега body прописываем наиболее распространеные стили*/
 body{
@@ -10,7 +11,7 @@ body{
     font-size: 14px;
     line-height: 17px;
 }
-/*Патерн для скрытия объекта, но он останется виден поясковым машинам*/
+/*Патерн для скрытия объекта, но он останется виден поясковых машинам*/
 .visually-hidden {
     position: absolute;
     white-space: nowrap;

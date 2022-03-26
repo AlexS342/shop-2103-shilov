@@ -1,11 +1,25 @@
+/*Создаем переменные*/
 :root{
     --black-bkg: #222222;
     --pink-bkg: #F1E4E6;
     --pink-color: #F16D7F;
 }
-
+/*Для тега body прописываем наиболее распространеные стили*/
 body{
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 17px;
+}
+/*Патерн для скрытия объекта, но он останется виден поясковым машинам*/
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }

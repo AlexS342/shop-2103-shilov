@@ -92,3 +92,59 @@ body{
 .brand__title-pink{
     color: var(--pink-color);
 }
+
+.sales{
+    margin-top: 65px;
+}
+.sales__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.sales__item-wpr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sales__item{
+    width: 360px;
+    height: 260px;
+    background-color: var(--sales-bkg);
+}
+
+.sales__item--woman{
+    background-image: url(../img/woman-sales.jpg);
+}
+
+.sales__item--man{
+    background-image: url(../img/man-sales.jpg);
+}
+
+.sales__item--kids{
+    background-image: url(../img/kids-sales.jpg);
+}
+
+.sales__item--shoes{
+    width: 1140px;
+    background-image: url(../img/accesories-sales.jpg);
+    margin-top: 30px;
+}
+
+.sales__item-title{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 105px;
+    font-weight: 400; /*Пришлось прописать в классе, из body не работает*/
+}
+
+.sales__item-text{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--pink-color);
+}

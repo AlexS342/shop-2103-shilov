@@ -2,6 +2,8 @@
 :root{
     --black-bkg: #222222;
     --black-color: #222222;
+    --sub-black-bkg: #222224;
+    --sub-black-color: #222224;
     --pink-bkg: #F1E4E6;
     --pink-color: #F16D7F;
     --sales-bkg: #4e4544;
@@ -9,7 +11,8 @@
     --card-bkg: #F8F8F8;
     --card-color: #5D5D5D;
     --button-color: #F26376;
-    --advantages-color: #FBFBFB;
+    --white-color: #FBFBFB;
+    color: white
 
 }
 /*Для тега body прописываем наиболее распространеные стили*/
@@ -34,6 +37,7 @@ body{
     margin: -1px;
 }
 
+/*----------Header----------*/
 .header{
     background-color: var(--black-bkg);
 }
@@ -71,6 +75,7 @@ body{
     display: none;
 }
 
+/*-------section brand-------*/
 .brand{
     display: flex;
     background-color: var(--pink-bkg);
@@ -101,6 +106,7 @@ body{
     color: var(--pink-color);
 }
 
+/*-------section sales-------*/
 .sales{
     margin-top: 65px;
 }
@@ -157,13 +163,14 @@ body{
     color: var(--pink-color);
 }
 
+/*------section poducts------*/
 .poducts{
     margin-top: 96px;
 }
 
 .products__title{
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 400; /*Пришлось прописать в классе, из body не работает*/
     line-height: 36px;
     text-align: left;
     text-align: center;
@@ -172,7 +179,7 @@ body{
 }
 
 .products__sub-title{
-    font-weight: 400;
+    font-weight: 400; /*Пришлось прописать в классе, из body не работает*/
     line-height: 17px;
     text-align: left;
     text-align: center;
@@ -238,8 +245,9 @@ body{
     text-transform: capitalize;
 }
 
+/*----section advantages----*/
 .advantages__wpr{
-    background-color: var(--black-bkg);
+    background-color: var(--sub-black-bkg);
     margin-top: 96px;
     
 }
@@ -270,7 +278,7 @@ body{
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    color: var(--advantages-color);
+    color: var(--white-color);
     text-transform: capitalize;
     margin-top: 24px;
 }
@@ -280,12 +288,13 @@ body{
     font-weight: 300;
     line-height: 17px;
     text-align: center;
-    color: var(--advantages-color);
+    color: var(--white-color);
     padding: 0 24px;
     margin-top: 16px;
 
 }
 
+/*-------section quote-------*/
 .quote__wpr{
     background-image: url(../img/footer-bkg.jpg);
     background-repeat:no-repeat;
@@ -315,7 +324,7 @@ body{
     font-weight: 400;
     line-height: 24px;
     text-align: center;
-    color: var(--black-color);
+    color: var(--sub-black-color);
     width: 360px;
     margin-top: 30px;
 }
@@ -330,6 +339,7 @@ body{
     line-height: 38px;
     text-align: center;
     text-transform: uppercase;
+    color: var(--sub-black-color);
 }
 
 .quote__wrapper-sub-title{
@@ -338,11 +348,14 @@ body{
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
+    color: var(--sub-black-color);
 }
 
+/*----section down-footer----*/
 .down-footer__wrp{
-    background-color: #222222;
+    background-color: var(--sub-black-bkg);
 }
+
 .down-footer{
     display: flex;
     justify-content: space-between;
@@ -354,7 +367,7 @@ body{
     font-weight: 400;
     line-height: 19px;
     text-align: left;
-    color: #FBFBFB;
+    color: var(--white-color);
 }
 
 .down-footer__list{

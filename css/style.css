@@ -288,6 +288,8 @@ body{
 
 .quote__wpr{
     background-image: url(../img/footer-bkg.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
 }
 
 .quote{

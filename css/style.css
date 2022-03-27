@@ -23,6 +23,10 @@ body{
     font-style: normal;
     font-weight: 400;
 }
+.all-wrapper{
+    width: 1600px;
+    margin: 0 auto;
+}
 /*Патерн для скрытия объекта, но он останется виден поясковых машинам*/
 .visually-hidden {
     position: absolute;

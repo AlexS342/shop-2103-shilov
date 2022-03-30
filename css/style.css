@@ -213,6 +213,18 @@ body{
     text-transform: uppercase;
     margin-left: 92px;
     color: var(--black-color);
+    position: relative;
+}
+
+.brand__title:before{
+    content: '';
+    width: 12px;
+    height: 92px;
+    position: absolute;
+    top: 4px;
+    left: -28px;
+    background-image: url(../img/rectangle.svg);
+    background-size: 12px 92px;
 }
 
 .brand__title-lower{

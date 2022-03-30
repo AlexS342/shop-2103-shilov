@@ -17,6 +17,7 @@
     --nav-gray-color: #6F6E6E;
     --nav-gray-color-hover: #4e4e4e;
     --nav-pink-color-hover: #db4c5f;
+    --white-color: #FFFFFF;
 }
 /*Для тега body прописываем наиболее распространеные стили*/
 body{
@@ -147,7 +148,7 @@ body{
     min-height: 764px;
     right: 0;
     top: 75px;
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     padding: 0 0 0 34px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -302,7 +303,7 @@ body{
     line-height: 19px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
     margin-top: 105px;
     font-weight: 400; /*Пришлось прописать в классе, из body не работает*/
 }
@@ -347,11 +348,12 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+/*наведение на карточку*/
 .products__item{
     width: 360px;
     margin-bottom: 30px;
     background-color: var(--card-bkg);
+    position: relative;
 }
 
 .products__item-title{
@@ -379,6 +381,44 @@ body{
     margin: 18px;
 }
 
+.products__item-hover{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 420px;
+    background: rgba(58, 56, 56, 0.86)
+}
+
+.products-hover__border{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 138px;
+    height: 43px;
+    border: 1px solid var(--white-color);
+}
+
+.products-hover__img{
+    width: 26px;
+}
+
+.products-hover__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white-color)
+}
+
+.products__item:hover > .products__item-hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*-------------------------------*/
 .products__button-wpr{
     display: flex;
     justify-content: center;
@@ -389,7 +429,7 @@ body{
     height: 47px;
     width: 211px;
     border: 1px solid #FF6A6A;
-    background: #FFFFFF;
+    background: var(--white-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;

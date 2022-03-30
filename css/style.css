@@ -14,7 +14,9 @@
     --white-color: #FBFBFB;
     --white-color-hover: #ffe08c;
     --white-color-active: #ff0000;
-    --nav-gray-color: #6F6E6E
+    --nav-gray-color: #6F6E6E;
+    --nav-gray-color-hover: #4e4e4e;
+    --nav-pink-color-hover: #db4c5f;
 }
 /*Для тега body прописываем наиболее распространеные стили*/
 body{
@@ -182,17 +184,36 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: var(--pink-color);
     text-transform: uppercase;
     margin-top: 20px;
+}
+
+.nav-item__title-link{
+    text-decoration: none;
+    color: var(--pink-color);
+}
+
+.nav-item__title-link:hover,
+.nav-item__title-link:focus{
+    color: var(--nav-pink-color-hover);
 }
 
 .nav-item__item{
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: var(--nav-gray-color);
     margin-top: 11px;
+    padding-left: 21px;
+}
+
+.nav-item__item-link{
+    text-decoration: none;
+    color: var(--nav-gray-color);
+}
+
+.nav-item__item-link:hover,
+.nav-item__item-link:focus{
+    color: var(--nav-gray-color-hover);
 }
 
 /*-------section brand-------*/

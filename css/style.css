@@ -12,8 +12,8 @@
     --card-color: #5D5D5D;
     --button-color: #F26376;
     --white-color: #FBFBFB;
-    color: white
-
+    --white-color-hover: #ffe08c;
+    --white-color-active: #ff0000;
 }
 /*Для тега body прописываем наиболее распространеные стили*/
 body{
@@ -44,6 +44,7 @@ body{
 /*----------Header----------*/
 .header{
     background-color: var(--black-bkg);
+    position: relative;
 }
 
 .conteiner{
@@ -67,16 +68,78 @@ body{
     margin: 0 41px 0 0;
 }
 
+.header__search-icon{
+    fill: var(--white-color);
+}
+
+.header__search-icon:hover,
+.header__search-icon:focus{
+    fill: var(--white-color-hover);
+    cursor: pointer;
+    outline: none;
+}
+
+.header__search-icon:active{
+    fill: var(--white-color-active);
+    cursor: pointer;
+    outline: none;
+}
+
 .header__burger{
     border: none;
     background: transparent;
 }
+
+.header__burger-icon{
+    fill: var(--white-color);
+}
+
+.header__burger-icon:hover,
+.header__burger-icon:focus{
+    fill: var(--white-color-hover);
+    cursor: pointer;
+    outline: none;
+}
+
+.header__burger-icon:active{
+    fill: var(--white-color-active);
+    cursor: pointer;
+    outline: none;
+}
+
 .header__link{
     margin: 0 0 0 33px;
 }
 
+.header__person-icon{
+    fill: var(--white-color);
+}
+
+.header__person-icon:hover,
+.header__person-icon:focus{
+    fill: var(--white-color-hover);
+}
+
+.header__person-icon:active{
+    fill: var(--white-color-active);
+}
+
+.header__basket-icon{
+    fill: var(--white-color);
+}
+
+.header__basket-icon:hover,
+.header__basket-icon:focus{
+    fill: var(--white-color-hover);
+}
+
+.header__basket-icon:active{
+    fill: var(--white-color-active);
+}
+
 .header__nav{
     display: none;
+    position: absolute;
 }
 
 /*-------section brand-------*/

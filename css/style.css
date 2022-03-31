@@ -406,13 +406,15 @@ body {
     background: rgba(58, 56, 56, 0.86)
 }
 
-.products-hover__border {
+.products-hover__button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 138px;
     height: 43px;
     border: 1px solid var(--white-color);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 .products-hover__img {

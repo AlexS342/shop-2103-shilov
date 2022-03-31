@@ -13,7 +13,7 @@
     --button-color: #F26376;
     --white-color: #FBFBFB;
     --white-color-hover: #ffe08c;
-    --white-color-active: #ff0000;
+    --white-color-active: #ff8901;
     --nav-gray-color: #6F6E6E;
     --nav-gray-color-hover: #4e4e4e;
     --nav-pink-color-hover: #db4c5f;
@@ -576,4 +576,16 @@ body{
 
 .down-footer__item{
     margin-left: 7px;
+}
+
+.down-footer__icon-bkg{
+    fill: var(--white-color);
+}
+
+.down-footer__icon:hover >.down-footer__icon-simbol{
+    fill: var(--white-color);
+}
+
+.down-footer__icon:hover >.down-footer__icon-bkg{
+    fill: var(--pink-color);
 }

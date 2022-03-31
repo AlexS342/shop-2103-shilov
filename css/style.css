@@ -451,6 +451,7 @@ body {
     text-align: center;
     color: var(--button-color);
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .products__button:hover,
@@ -593,11 +594,11 @@ body {
     border-radius: 0 25px 25px 0;
     border: none;
     background-color: var(--pink-color);
-
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: var(--white-color);
+    cursor: pointer;
 }
 
 /*----section down-footer----*/
@@ -627,6 +628,7 @@ body {
 
 .down-footer__item {
     margin-left: 7px;
+    cursor: pointer;
 }
 
 .down-footer__icon-bkg {

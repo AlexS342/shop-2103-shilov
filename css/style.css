@@ -640,6 +640,26 @@ body {
     box-sizing: border-box;
 }
 
+.registration__form-input:hover {
+    border: 1px solid var(--white-color-hover);
+}
+
+.registration__form-input:focus {
+    outline: 1px solid red;
+}
+
+.registration__form-input::placeholder {
+    color: #B1B1B1;
+}
+
+.registration__form-input-radio:hover {
+    border: 1px solid var(--white-color-hover);
+}
+
+.registration__form-input-radio:focus {
+    outline: 1px solid red;
+}
+
 .registration__form-label {
     display: inline-block;
     margin: 33px 20px 35px 0;
@@ -647,10 +667,6 @@ body {
     font-weight: 300;
     line-height: 13px;
     text-align: left;
-}
-
-.registration__form-input::placeholder {
-    color: #B1B1B1;
 }
 
 .registration__form-text {

@@ -668,6 +668,11 @@ body {
     color: var(--sub-black-bkg);
 }
 
+.quote__wrapper-form-email:hover,
+.quote__wrapper-form-email:focus {
+    border: 1px solid var(--white-color-hover);
+}
+
 .quote__wrapper-form-button {
     width: 100px;
     height: 50px;
@@ -680,6 +685,16 @@ body {
     line-height: 17px;
     color: var(--white-color);
     cursor: pointer;
+}
+
+.quote__wrapper-form-button:hover,
+.quote__wrapper-form-button:focus {
+    background: #FF6A6A;
+    color: var(--white-color);
+}
+
+.quote__wrapper-form-button:active {
+    opacity: 0.5;
 }
 
 /*----section down-footer----*/

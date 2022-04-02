@@ -373,7 +373,6 @@ body {
     color: var(--white-color);
     margin-top: 105px;
     font-weight: 400;
-    /*Пришлось прописать в классе, из body не работает*/
 }
 
 .sales__item-text {
@@ -393,7 +392,6 @@ body {
 .products__title {
     font-size: 30px;
     font-weight: 400;
-    /*Пришлось прописать в классе, из body не работает*/
     line-height: 36px;
     text-align: left;
     text-align: center;
@@ -403,7 +401,6 @@ body {
 
 .products__sub-title {
     font-weight: 400;
-    /*Пришлось прописать в классе, из body не работает*/
     line-height: 17px;
     text-align: left;
     text-align: center;
@@ -472,6 +469,15 @@ body {
     cursor: pointer;
 }
 
+.products-hover__button:hover,
+.products-hover__button:focus {
+    background-color: rgba(33, 33, 0, 0.5);
+}
+
+.products-hover__button:active {
+    background-color: rgba(77, 77, 0, 0.7);
+}
+
 .products-hover__img {
     width: 26px;
 }
@@ -513,6 +519,10 @@ body {
 .products__button:focus {
     background: #FF6A6A;
     color: var(--white-color);
+}
+
+.products__button:active {
+    opacity: 0.5;
 }
 
 

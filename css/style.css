@@ -423,12 +423,28 @@ body {
     position: relative;
 }
 
+/*.products__item-link {
+    text-decoration: none;
+}*/
+
 .products__item-title {
+    text-decoration: none;
+    display: block;
+    color: black;
     font-weight: 400;
     line-height: 16px;
     text-align: left;
     text-transform: uppercase;
     margin: 24px 18px 0 18px;
+}
+
+.products__item-title:hover,
+.products__item-title:focus {
+    color: var(--white-color-hover);
+}
+
+.products__item-title:active {
+    color: var(--white-color-active);
 }
 
 .products__item-text {

@@ -637,6 +637,7 @@ body {
     line-height: 16px;
     text-align: left;
     margin-top: 21px;
+    box-sizing: border-box;
 }
 
 .registration__form-label {
@@ -683,8 +684,7 @@ body {
     margin-left: 20px;
 }
 
-
-.egistration__info {
+.registration__info {
     width: 650px;
 }
 

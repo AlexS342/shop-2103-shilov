@@ -110,9 +110,12 @@ body {
     color: var(--white-color);
 }
 
-.header__search-input:hover,
-.header__search-input:focus {
+.header__search-input:hover {
     border: 1px solid var(--white-color-hover);
+}
+
+.header__search-input:focus {
+    outline: 1px solid red;
 }
 
 .header__manu-list {
@@ -828,9 +831,12 @@ body {
     color: var(--sub-black-bkg);
 }
 
-.quote__wrapper-form-email:hover,
-.quote__wrapper-form-email:focus {
+.quote__wrapper-form-email:hover {
     border: 1px solid var(--white-color-hover);
+}
+
+.quote__wrapper-form-email:focus {
+    outline: 1px solid red;
 }
 
 .quote__wrapper-form-button {

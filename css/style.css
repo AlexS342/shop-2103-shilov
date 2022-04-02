@@ -684,8 +684,54 @@ body {
     margin-left: 20px;
 }
 
+.registration__form-button:hover,
+.registration__form-button:focus {
+    background: #FF6A6A;
+    color: var(--white-color);
+}
+
+.registration__form-button:active {
+    opacity: 0.5;
+}
+
 .registration__info {
     width: 650px;
+}
+
+.registration__info-header {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.registration__info-text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+    margin-top: 22px;
+}
+
+.registration__info-list {
+    margin-left: 43px;
+    margin-top: 21px;
+}
+
+.registration__info-item {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.registration__info-item-img {
+    position: absolute;
+    top: 7px;
+    left: -43px;
 }
 
 /*~~~~~~~~~~FOOTER~~~~~~~~~~~*/

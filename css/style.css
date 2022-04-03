@@ -655,21 +655,23 @@ body {
     color: #B1B1B1;
 }
 
-.registration__form-input-radio:hover {
-    border: 1px solid var(--white-color-hover);
+.registration__form-group-radio {
+    display: flex;
+    align-items: center;
+    margin: 33px 0 33px 0;
 }
 
-.registration__form-input-radio:focus {
-    outline: 1px solid red;
+[type="radio"] {
+    margin: 0;
 }
 
-.registration__form-label {
+.registration__form-span {
     display: inline-block;
-    margin: 33px 20px 35px 0;
     font-size: 11px;
     font-weight: 300;
-    line-height: 13px;
+    line-height: 14px;
     text-align: left;
+    margin: 0px 20px 0px 10px;
 }
 
 .registration__form-text {

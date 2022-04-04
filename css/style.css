@@ -111,7 +111,7 @@ body {
 }
 
 .header__search-input:hover {
-    border: 1px solid var(--white-color-hover);
+    outline: 1px solid var(--white-color-hover);    
 }
 
 .header__search-input:focus {
@@ -644,7 +644,7 @@ body {
 }
 
 .registration__form-input:hover {
-    border: 1px solid var(--white-color-hover);
+    outline: 1px solid var(--white-color-hover);
 }
 
 .registration__form-input:focus {
@@ -834,7 +834,7 @@ body {
 }
 
 .quote__wrapper-form-email:hover {
-    border: 1px solid var(--white-color-hover);
+    outline: 1px solid var(--white-color-hover);
 }
 
 .quote__wrapper-form-email:focus {

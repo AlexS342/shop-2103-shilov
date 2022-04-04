@@ -66,13 +66,19 @@ body {
     justify-content: space-between;
 }
 
-.header__manu-list {
+.header__conteiner {
     display: flex;
-    align-items: center;
 }
 
-.header__logo {
-    margin: 0 41px 0 0;
+.header__search {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 41px;
+}
+
+.header__search-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 .header__search-icon {
@@ -90,6 +96,31 @@ body {
     fill: var(--white-color-active);
     cursor: pointer;
     outline: none;
+}
+
+.header__search-input {
+    width: 200px;
+    height: 28px;
+    border: 0;
+    border-bottom: 1px solid #E1E1E1;
+    border-radius: 3px;
+    background: #302f2f;
+    padding-left: 5px;
+    margin-left: 5px;
+    color: var(--white-color);
+}
+
+.header__search-input:hover {
+    border: 1px solid var(--white-color-hover);
+}
+
+.header__search-input:focus {
+    outline: 1px solid red;
+}
+
+.header__manu-list {
+    display: flex;
+    align-items: center;
 }
 
 .header__burger {
@@ -168,12 +199,39 @@ body {
 .header__nav-close {
     display: flex;
     flex-direction: row-reverse;
-    height: 37px;
+    height: 38px;
 }
+
+.header__nav-close-button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    padding: 0;
+    margin: 16px 16px 0 0;
+    cursor: pointer;
+}
+
+.header__nav-close-button:hover,
+.header__nav-close-button:focus {
+    background-color: var(--black-bkg);
+}
+
+.header__nav-close-button:hover>.header__nav-close-img,
+.header__nav-close-button:focus>.header__nav-close-img {
+    fill: var(--white-color-hover);
+}
+
+.header__nav-close-button:active>.header__nav-close-img {
+    fill: var(--white-color-active);
+}
+
 
 .header__nav-close-img {
     width: 12px;
-    margin: 16px 16px 0 0;
+    margin: 2px;
+    fill: #9F9F9F;
 }
 
 .header__nav-title {
@@ -318,7 +376,6 @@ body {
     color: var(--white-color);
     margin-top: 105px;
     font-weight: 400;
-    /*Пришлось прописать в классе, из body не работает*/
 }
 
 .sales__item-text {
@@ -338,7 +395,6 @@ body {
 .products__title {
     font-size: 30px;
     font-weight: 400;
-    /*Пришлось прописать в классе, из body не работает*/
     line-height: 36px;
     text-align: left;
     text-align: center;
@@ -348,7 +404,6 @@ body {
 
 .products__sub-title {
     font-weight: 400;
-    /*Пришлось прописать в классе, из body не работает*/
     line-height: 17px;
     text-align: left;
     text-align: center;
@@ -371,12 +426,28 @@ body {
     position: relative;
 }
 
+.products__item-img {
+    width: 360px;
+}
+
 .products__item-title {
+    text-decoration: none;
+    display: block;
+    color: black;
     font-weight: 400;
     line-height: 16px;
     text-align: left;
     text-transform: uppercase;
     margin: 24px 18px 0 18px;
+}
+
+.products__item-title:hover,
+.products__item-title:focus {
+    color: var(--white-color-hover);
+}
+
+.products__item-title:active {
+    color: var(--white-color-active);
 }
 
 .products__item-text {
@@ -415,6 +486,15 @@ body {
     border: 1px solid var(--white-color);
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+}
+
+.products-hover__button:hover,
+.products-hover__button:focus {
+    background-color: rgba(33, 33, 0, 0.5);
+}
+
+.products-hover__button:active {
+    background-color: rgba(77, 77, 0, 0.7);
 }
 
 .products-hover__img {
@@ -458,6 +538,10 @@ body {
 .products__button:focus {
     background: #FF6A6A;
     color: var(--white-color);
+}
+
+.products__button:active {
+    opacity: 0.5;
 }
 
 
@@ -510,6 +594,168 @@ body {
 
 }
 
+/*~~~~MAIN~REGISTRATION~~~~~~*/
+.registration__title-wpr {
+    background-color: #F8F3F4;
+}
+
+.registration__title {
+    display: flex;
+    align-items: center;
+    height: 148px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    color: var(--pink-color);
+    text-transform: uppercase;
+}
+
+.registration__wrp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+.registration__form {
+    width: 360px;
+}
+
+.registration__form-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--black-color);
+    text-transform: capitalize;
+}
+
+.registration__form-input {
+    width: 100%;
+    height: 45px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 21px;
+    box-sizing: border-box;
+}
+
+.registration__form-input:hover {
+    border: 1px solid var(--white-color-hover);
+}
+
+.registration__form-input:focus {
+    outline: 1px solid red;
+}
+
+.registration__form-input::placeholder {
+    color: #B1B1B1;
+}
+
+.registration__form-group-radio {
+    display: flex;
+    align-items: center;
+    margin: 33px 0 33px 0;
+}
+
+[type="radio"] {
+    margin: 0;
+}
+
+.registration__form-span {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: left;
+    margin: 0px 20px 0px 10px;
+}
+
+.registration__form-text {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: left;
+    color: #B1B1B1;
+    margin-top: 16px;
+}
+
+.registration__form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 167px;
+    height: 50px;
+    background-color: var(--button-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    color: var(--white-color);
+    margin-top: 40px;
+}
+
+.registration__form-button>svg {
+    width: 17px;
+    margin-left: 20px;
+}
+
+.registration__form-button:hover,
+.registration__form-button:focus {
+    background: #FF6A6A;
+    color: var(--white-color);
+}
+
+.registration__form-button:active {
+    opacity: 0.5;
+}
+
+.registration__info {
+    width: 650px;
+}
+
+.registration__info-header {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.registration__info-text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+    margin-top: 22px;
+}
+
+.registration__info-list {
+    margin-left: 43px;
+    margin-top: 21px;
+}
+
+.registration__info-item {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.registration__info-item-img {
+    position: absolute;
+    top: 7px;
+    left: -43px;
+}
+
+/*~~~~~~~~~~FOOTER~~~~~~~~~~~*/
 /*-------section quote-------*/
 .quote__wpr {
     background-image: url(../img/footer-bkg.jpg);
@@ -587,6 +833,14 @@ body {
     color: var(--sub-black-bkg);
 }
 
+.quote__wrapper-form-email:hover {
+    border: 1px solid var(--white-color-hover);
+}
+
+.quote__wrapper-form-email:focus {
+    outline: 1px solid red;
+}
+
 .quote__wrapper-form-button {
     width: 100px;
     height: 50px;
@@ -599,6 +853,16 @@ body {
     line-height: 17px;
     color: var(--white-color);
     cursor: pointer;
+}
+
+.quote__wrapper-form-button:hover,
+.quote__wrapper-form-button:focus {
+    background: #FF6A6A;
+    color: var(--white-color);
+}
+
+.quote__wrapper-form-button:active {
+    opacity: 0.5;
 }
 
 /*----section down-footer----*/
@@ -635,10 +899,20 @@ body {
     fill: var(--white-color);
 }
 
-.down-footer__icon:hover>.down-footer__icon-simbol {
+.down-footer__icon:hover>.down-footer__icon-simbol,
+.down-footer__icon:focus>.down-footer__icon-simbol {
     fill: var(--white-color);
 }
 
-.down-footer__icon:hover>.down-footer__icon-bkg {
+.down-footer__icon:active>.down-footer__icon-simbol {
     fill: var(--pink-color);
+}
+
+.down-footer__icon:hover>.down-footer__icon-bkg,
+.down-footer__icon:focus>.down-footer__icon-bkg {
+    fill: var(--pink-color);
+}
+
+.down-footer__icon:active>.down-footer__icon-bkg {
+    fill: var(--white-color-active);
 }

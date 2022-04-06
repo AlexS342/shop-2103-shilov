@@ -1,0 +1,155 @@
+.poducts {
+    margin-top: 96px;
+}
+
+.products__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-align: center;
+    text-transform: capitalize;
+    color: $black-color;
+}
+
+.products__sub-title {
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    text-align: center;
+    text-transform: capitalize;
+    color: $sub-title;
+    margin-top: 6px;
+}
+
+.products__list {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products__item {
+    width: 360px;
+    margin-bottom: 30px;
+    background-color: $card-bkg;
+    position: relative;
+}
+
+.products__item-img {
+    width: 360px;
+}
+
+.products__item-title {
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 24px 18px 0 18px;
+}
+
+.products__item-title:hover,
+.products__item-title:focus {
+    color: $white-color-hover;
+}
+
+.products__item-title:active {
+    color: $white-color-active;
+}
+
+.products__item-text {
+    font-weight: 300;
+    line-height: 17px;
+    text-align: left;
+    color: $card-color;
+    margin: 12px 18px 0 18px;
+}
+
+.products__item-price {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: $button-color;
+    margin: 18px;
+}
+
+.products__item-hover {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 420px;
+    background: rgba(58, 56, 56, 0.86)
+}
+
+.products-hover__button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 138px;
+    height: 43px;
+    border: 1px solid $white-color;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.products-hover__button:hover,
+.products-hover__button:focus {
+    background-color: rgba(33, 33, 0, 0.5);
+}
+
+.products-hover__button:active {
+    background-color: rgba(77, 77, 0, 0.7);
+}
+
+.products-hover__img {
+    width: 26px;
+}
+
+.products-hover__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white-color;
+}
+
+.products__item:hover>.products__item-hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products__button-wpr {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.products__button {
+    height: 47px;
+    width: 211px;
+    border: 1px solid #FF6A6A;
+    background: $white-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    color: $button-color;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.products__button:hover,
+.products__button:focus {
+    background: #FF6A6A;
+    color: $white-color;
+}
+
+.products__button:active {
+    opacity: 0.5;
+}

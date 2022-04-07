@@ -37,19 +37,25 @@
 }
 
 .sales__item-title {
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
     text-transform: uppercase;
     color: $white-color;
     margin-top: 105px;
+    @include font(16px, 19px, 700);
+    /*
+    font-size: 16px;
+    line-height: 19px;
     font-weight: 400;
+    */
+    text-align: center;
 }
 
 .sales__item-text {
+    @include font(24px, 29px, 700);
+    /*
     font-size: 24px;
-    font-weight: 700;
     line-height: 29px;
+    font-weight: 700;
+    */
     text-align: center;
     text-transform: uppercase;
     color: $pink-color;

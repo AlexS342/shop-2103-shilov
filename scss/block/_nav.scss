@@ -1,7 +1,5 @@
 .nav-item__title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include font();
     text-transform: uppercase;
     margin-top: 20px;
 }
@@ -21,9 +19,7 @@
 }
 
 .nav-item__item {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include font();
     margin-top: 11px;
     padding-left: 21px;
 }

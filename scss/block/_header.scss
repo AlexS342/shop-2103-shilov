@@ -179,9 +179,12 @@
     }
 
     &__nav-title {
-        font-weight: 700;
+        @include font(14px, 17px, 700, );
+        /*
         font-size: 14px;
         line-height: 17px;
+        font-weight: 700;
+        */
         text-transform: uppercase;
         margin-bottom: 24px;
     }

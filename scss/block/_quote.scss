@@ -23,9 +23,12 @@
 }
 
 .quote__wrapper-text {
+    @include font(20px, 24px);
+    /*
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
+    */
     text-align: center;
     color: $sub-black-color;
     width: 360px;
@@ -37,18 +40,24 @@
 }
 
 .quote__wrapper-title {
+    @include font(24px, 38px, 700);
+    /*
     font-size: 24px;
     font-weight: 700;
     line-height: 38px;
+    */
     text-align: center;
     text-transform: uppercase;
     color: $sub-black-color;
 }
 
 .quote__wrapper-sub-title {
+    @include font(18px, 30px);
+    /*
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+    */
     text-align: center;
     text-transform: uppercase;
     color: $sub-black-color;
@@ -68,9 +77,12 @@
     border: none;
     background-color: #E1E1E1;
     padding-left: 22px;
+    @include font();
+    /*
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
+    */
     color: $sub-black-bkg;
 }
 
@@ -89,9 +101,12 @@
     border-radius: 0 25px 25px 0;
     border: none;
     background-color: $pink-color;
+    @include font();
+    /*
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+    */
     color: $white-color;
     cursor: pointer;
 }

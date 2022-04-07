@@ -137,8 +137,8 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   line-height: 17px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
 }
 
 .all-wrapper {
@@ -340,17 +340,24 @@ body {
 }
 
 .header__nav-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 700;
+  font-style: normal;
+  /*
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+        */
   text-transform: uppercase;
   margin-bottom: 24px;
 }
 
 .nav-item__title {
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
   text-transform: uppercase;
   margin-top: 20px;
 }
@@ -370,9 +377,10 @@ body {
 }
 
 .nav-item__item {
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
   margin-top: 11px;
   padding-left: 21px;
 }
@@ -402,9 +410,15 @@ body {
 }
 
 .brand__title {
-  font-weight: 900;
   font-size: 48px;
   line-height: 57px;
+  font-weight: 900;
+  font-style: normal;
+  /*
+        font-size: 48px;
+        line-height: 57px;
+        font-weight: 900;
+        */
   text-transform: uppercase;
   margin-left: 92px;
   color: #222222;
@@ -423,9 +437,15 @@ body {
 }
 
 .brand__title-lower {
-  font-weight: 700;
   font-size: 32px;
   line-height: 38px;
+  font-weight: 700;
+  font-style: normal;
+  /*
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 700;
+        */
   display: block;
 }
 
@@ -472,19 +492,31 @@ body {
 }
 
 .sales__item-title {
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 105px;
-  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  font-style: normal;
+  /*
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    */
+  text-align: center;
 }
 
 .sales__item-text {
   font-size: 24px;
-  font-weight: 700;
   line-height: 29px;
+  font-weight: 700;
+  font-style: normal;
+  /*
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    */
   text-align: center;
   text-transform: uppercase;
   color: #F16D7F;
@@ -496,17 +528,28 @@ body {
 
 .products__title {
   font-size: 30px;
-  font-weight: 400;
   line-height: 36px;
-  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    */
   text-align: center;
   text-transform: capitalize;
   color: #222222;
 }
 
 .products__sub-title {
-  font-weight: 400;
+  font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-weight: 400;
+    line-height: 17px;
+    */
   text-align: left;
   text-align: center;
   text-transform: capitalize;
@@ -536,8 +579,14 @@ body {
   text-decoration: none;
   display: block;
   color: black;
-  font-weight: 400;
+  font-size: 14px;
   line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-weight: 400;
+    line-height: 16px;
+    */
   text-align: left;
   text-transform: uppercase;
   margin: 24px 18px 0 18px;
@@ -553,8 +602,14 @@ body {
 }
 
 .products__item-text {
-  font-weight: 300;
+  font-size: 14px;
   line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  /*
+    font-weight: 300;
+    line-height: 17px;
+    */
   text-align: left;
   color: #5D5D5D;
   margin: 12px 18px 0 18px;
@@ -562,8 +617,14 @@ body {
 
 .products__item-price {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    */
   text-align: left;
   color: #F26376;
   margin: 18px;
@@ -604,8 +665,14 @@ body {
 }
 
 .products-hover__text {
-  font-weight: 400;
   font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-weight: 400;
+    font-size: 14px;
+    */
   line-height: 17px;
   color: #FFFFFF;
 }
@@ -628,8 +695,14 @@ body {
   border: 1px solid #FF6A6A;
   background: #FFFFFF;
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    */
   text-align: center;
   color: #F26376;
   text-transform: capitalize;
@@ -652,17 +725,28 @@ body {
 
 .products__title {
   font-size: 30px;
-  font-weight: 400;
   line-height: 36px;
-  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    */
   text-align: center;
   text-transform: capitalize;
   color: #222222;
 }
 
 .products__sub-title {
-  font-weight: 400;
+  font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-weight: 400;
+    line-height: 17px;
+    */
   text-align: left;
   text-align: center;
   text-transform: capitalize;
@@ -692,8 +776,14 @@ body {
   text-decoration: none;
   display: block;
   color: black;
-  font-weight: 400;
+  font-size: 14px;
   line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-weight: 400;
+    line-height: 16px;
+    */
   text-align: left;
   text-transform: uppercase;
   margin: 24px 18px 0 18px;
@@ -709,8 +799,14 @@ body {
 }
 
 .products__item-text {
-  font-weight: 300;
+  font-size: 14px;
   line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  /*
+    font-weight: 300;
+    line-height: 17px;
+    */
   text-align: left;
   color: #5D5D5D;
   margin: 12px 18px 0 18px;
@@ -718,8 +814,14 @@ body {
 
 .products__item-price {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    */
   text-align: left;
   color: #F26376;
   margin: 18px;
@@ -760,8 +862,14 @@ body {
 }
 
 .products-hover__text {
-  font-weight: 400;
   font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-weight: 400;
+    font-size: 14px;
+    */
   line-height: 17px;
   color: #FFFFFF;
 }
@@ -784,8 +892,14 @@ body {
   border: 1px solid #FF6A6A;
   background: #FFFFFF;
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    */
   text-align: center;
   color: #F26376;
   text-transform: capitalize;
@@ -834,8 +948,14 @@ body {
 
 .advantages__list .advantages__item-tetle {
   font-size: 20px;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            */
   text-align: center;
   color: #FFFFFF;
   text-transform: capitalize;
@@ -844,8 +964,14 @@ body {
 
 .advantages__list .advantages__item-text {
   font-size: 14px;
-  font-weight: 300;
   line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  /*
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 17px;
+            */
   text-align: center;
   color: #FFFFFF;
   padding: 0 24px;
@@ -861,8 +987,14 @@ body {
   align-items: center;
   height: 148px;
   font-size: 24px;
-  font-weight: 400;
   line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    */
   text-align: left;
   color: #F16D7F;
   text-transform: uppercase;
@@ -881,8 +1013,14 @@ body {
 
 .registration__form-title {
   font-size: 16px;
-  font-weight: 300;
   line-height: 19px;
+  font-weight: 300;
+  font-style: normal;
+  /*
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    */
   letter-spacing: 0em;
   text-align: left;
   color: #222222;
@@ -893,8 +1031,14 @@ body {
   width: 100%;
   height: 45px;
   font-size: 13px;
-  font-weight: 300;
   line-height: 16px;
+  font-weight: 300;
+  font-style: normal;
+  /*
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    */
   text-align: left;
   margin-top: 21px;
   box-sizing: border-box;
@@ -925,16 +1069,28 @@ body {
 .registration__form-span {
   display: inline-block;
   font-size: 11px;
-  font-weight: 300;
   line-height: 14px;
+  font-weight: 300;
+  font-style: normal;
+  /*
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 14px;
+    */
   text-align: left;
   margin: 0px 20px 0px 10px;
 }
 
 .registration__form-text {
   font-size: 13px;
-  font-weight: 300;
   line-height: 16px;
+  font-weight: 300;
+  font-style: normal;
+  /*
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    */
   text-align: left;
   color: #B1B1B1;
   margin-top: 16px;
@@ -950,8 +1106,14 @@ body {
   background-color: #F26376;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 400;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    */
   text-align: left;
   color: #FFFFFF;
   margin-top: 40px;
@@ -978,16 +1140,28 @@ body {
 
 .registration__info-header {
   font-size: 24px;
-  font-weight: 300;
   line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  /*
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    */
   text-align: left;
   text-transform: uppercase;
 }
 
 .registration__info-text {
   font-size: 24px;
-  font-weight: 300;
   line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  /*
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    */
   text-align: left;
   margin-top: 22px;
 }
@@ -999,8 +1173,14 @@ body {
 
 .registration__info-item {
   font-size: 24px;
-  font-weight: 300;
   line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  /*
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    */
   text-align: left;
   margin-bottom: 16px;
   position: relative;
@@ -1038,8 +1218,14 @@ body {
 
 .quote__wrapper-text {
   font-size: 20px;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    */
   text-align: center;
   color: #222224;
   width: 360px;
@@ -1052,8 +1238,14 @@ body {
 
 .quote__wrapper-title {
   font-size: 24px;
-  font-weight: 700;
   line-height: 38px;
+  font-weight: 700;
+  font-style: normal;
+  /*
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    */
   text-align: center;
   text-transform: uppercase;
   color: #222224;
@@ -1061,8 +1253,14 @@ body {
 
 .quote__wrapper-sub-title {
   font-size: 18px;
-  font-weight: 400;
   line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    */
   text-align: center;
   text-transform: uppercase;
   color: #222224;
@@ -1083,8 +1281,14 @@ body {
   background-color: #E1E1E1;
   padding-left: 22px;
   font-size: 14px;
-  font-weight: 400;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    */
   color: #222224;
 }
 
@@ -1103,9 +1307,15 @@ body {
   border-radius: 0 25px 25px 0;
   border: none;
   background-color: #F16D7F;
-  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    */
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -1132,8 +1342,14 @@ body {
 
 .down-footer__copy {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  /*
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        */
   text-align: left;
   color: #FFFFFF;
 }

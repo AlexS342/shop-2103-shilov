@@ -6,9 +6,12 @@
     display: flex;
     align-items: center;
     height: 148px;
+    @include font(24px, 29px);
+    /*
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
+    */
     text-align: left;
     color: $pink-color;
     text-transform: uppercase;
@@ -26,9 +29,12 @@
 }
 
 .registration__form-title {
+    @include font(16px, 19px, 300);
+    /*
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
+    */
     letter-spacing: 0em;
     text-align: left;
     color: $black-color;
@@ -38,9 +44,12 @@
 .registration__form-input {
     width: 100%;
     height: 45px;
+    @include font(13px, 16px, 300);
+    /*
     font-size: 13px;
     font-weight: 300;
     line-height: 16px;
+    */
     text-align: left;
     margin-top: 21px;
     box-sizing: border-box;
@@ -70,17 +79,23 @@
 
 .registration__form-span {
     display: inline-block;
+    @include font(11px, 14px, 300);
+    /*
     font-size: 11px;
     font-weight: 300;
     line-height: 14px;
+    */
     text-align: left;
     margin: 0px 20px 0px 10px;
 }
 
 .registration__form-text {
+    @include font(13px, 16px, 300);
+    /*
     font-size: 13px;
     font-weight: 300;
     line-height: 16px;
+    */
     text-align: left;
     color: #B1B1B1;
     margin-top: 16px;
@@ -95,9 +110,12 @@
     height: 50px;
     background-color: $button-color;
     text-transform: uppercase;
+    @include font();
+    /*
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
+    */
     text-align: left;
     color: $white-color;
     margin-top: 40px;
@@ -123,17 +141,23 @@
 }
 
 .registration__info-header {
+    @include font(24px, 29px, 300);
+    /*
     font-size: 24px;
     font-weight: 300;
     line-height: 29px;
+    */
     text-align: left;
     text-transform: uppercase;
 }
 
 .registration__info-text {
+    @include font(24px, 29px, 300);
+    /*
     font-size: 24px;
     font-weight: 300;
     line-height: 29px;
+    */
     text-align: left;
     margin-top: 22px;
 }
@@ -144,9 +168,12 @@
 }
 
 .registration__info-item {
+    @include font(24px, 29px, 300);
+    /*
     font-size: 24px;
     font-weight: 300;
     line-height: 29px;
+    */
     text-align: left;
     margin-bottom: 16px;
     position: relative;

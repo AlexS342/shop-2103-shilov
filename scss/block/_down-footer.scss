@@ -6,45 +6,45 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.down-footer__copy {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    text-align: left;
-    color: $white-color;
-}
+    &__copy {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+        color: $white-color;
+    }
 
-.down-footer__list {
-    display: flex;
-    min-height: 79px;
-    align-items: center;
-}
+    &__list {
+        display: flex;
+        min-height: 79px;
+        align-items: center;
+    }
 
-.down-footer__item {
-    margin-left: 7px;
-    cursor: pointer;
-}
+    &__item {
+        margin-left: 7px;
+        cursor: pointer;
+    }
 
-.down-footer__icon-bkg {
-    fill: $white-color;
-}
+    &__icon-bkg {
+        fill: $white-color;
+    }
 
-.down-footer__icon:hover>.down-footer__icon-simbol,
-.down-footer__icon:focus>.down-footer__icon-simbol {
-    fill: $white-color;
-}
+    &__icon:hover>.down-footer__icon-simbol,
+    &__icon:focus>.down-footer__icon-simbol {
+        fill: $white-color;
+    }
 
-.down-footer__icon:active>.down-footer__icon-simbol {
-    fill: $pink-color;
-}
+    &__icon:active>.down-footer__icon-simbol {
+        fill: $pink-color;
+    }
 
-.down-footer__icon:hover>.down-footer__icon-bkg,
-.down-footer__icon:focus>.down-footer__icon-bkg {
-    fill: $pink-color;
-}
+    &__icon:hover>.down-footer__icon-bkg,
+    &__icon:focus>.down-footer__icon-bkg {
+        fill: $pink-color;
+    }
 
-.down-footer__icon:active>.down-footer__icon-bkg {
-    fill: $white-color-active;
+    &__icon:active>.down-footer__icon-bkg {
+        fill: $white-color-active;
+    }
 }

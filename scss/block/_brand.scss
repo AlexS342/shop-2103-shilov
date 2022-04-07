@@ -2,40 +2,40 @@
     display: flex;
     background-color: $pink-bkg;
     align-items: center;
-}
 
-.brand__img {
-    width: 800px;
-}
+    &__img {
+        width: 800px;
+    }
 
-.brand__title {
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 57px;
-    text-transform: uppercase;
-    margin-left: 92px;
-    color: $black-color;
-    position: relative;
-}
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 57px;
+        text-transform: uppercase;
+        margin-left: 92px;
+        color: $black-color;
+        position: relative;
+    }
 
-.brand__title:before {
-    content: '';
-    width: 12px;
-    height: 92px;
-    position: absolute;
-    top: 4px;
-    left: -28px;
-    background-image: url(../img/rectangle.svg);
-    background-size: 12px 92px;
-}
+    &__title:before {
+        content: '';
+        width: 12px;
+        height: 92px;
+        position: absolute;
+        top: 4px;
+        left: -28px;
+        background-image: url(../img/rectangle.svg);
+        background-size: 12px 92px;
+    }
 
-.brand__title-lower {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    display: block;
-}
+    &__title-lower {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        display: block;
+    }
 
-.brand__title-pink {
-    color: $pink-color;
+    &__title-pink {
+        color: $pink-color;
+    }
 }

@@ -62,8 +62,7 @@ body {
   fill: #FFFFFF;
 }
 
-.header__search-icon:hover,
-.header__search-icon:focus {
+.header__search-icon:hover, .header__search-icon:focus {
   fill: #ffe08c;
   cursor: pointer;
   outline: none;
@@ -109,8 +108,7 @@ body {
   fill: #FFFFFF;
 }
 
-.header__burger-icon:hover,
-.header__burger-icon:focus {
+.header__burger-icon:hover, .header__burger-icon:focus {
   fill: #ffe08c;
   cursor: pointer;
   outline: none;
@@ -130,8 +128,7 @@ body {
   fill: #FFFFFF;
 }
 
-.header__person-icon:hover,
-.header__person-icon:focus {
+.header__person-icon:hover, .header__person-icon:focus {
   fill: #ffe08c;
 }
 
@@ -143,8 +140,7 @@ body {
   fill: #FFFFFF;
 }
 
-.header__basket-icon:hover,
-.header__basket-icon:focus {
+.header__basket-icon:hover, .header__basket-icon:focus {
   fill: #ffe08c;
 }
 
@@ -165,11 +161,11 @@ body {
 }
 
 .header__burger:hover + .header__nav,
-.header__burger:focus + .header__nav {
+.header .header__burger:focus + .header__nav {
   display: block;
 }
 
-.header__nav:hover {
+.header__nav:focus, .header__nav:hover {
   display: block;
 }
 
@@ -190,8 +186,7 @@ body {
   cursor: pointer;
 }
 
-.header__nav-close-button:hover,
-.header__nav-close-button:focus {
+.header__nav-close-button:hover, .header__nav-close-button:focus {
   background-color: #222222;
 }
 
@@ -226,21 +221,20 @@ body {
   margin-top: 20px;
 }
 
-.nav-item__title-link {
+.nav-item__title__title-link {
   text-decoration: none;
   color: #F16D7F;
 }
 
-.nav-item__title-link:hover,
-.nav-item__title-link:focus {
+.nav-item__title__title-link:hover, .nav-item__title__title-link:focus {
   color: #db4c5f;
 }
 
-.nav-item__title-link:active {
+.nav-item__title__title-link:active {
   color: #ff8901;
 }
 
-.nav-item__item {
+.nav-item__title__item {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -248,17 +242,16 @@ body {
   padding-left: 21px;
 }
 
-.nav-item__item-link {
+.nav-item__title__item-link {
   text-decoration: none;
   color: #6F6E6E;
 }
 
-.nav-item__item-link:hover,
-.nav-item__item-link:focus {
+.nav-item__title__item-link:hover, .nav-item__title__item-link:focus {
   color: #4e4e4e;
 }
 
-.nav-item__item-link:active {
+.nav-item__title__item-link:active {
   color: #ff8901;
 }
 
@@ -678,6 +671,10 @@ body {
   margin-top: 96px;
 }
 
+.advantages {
+  min-height: 300px;
+}
+
 .advantages__list {
   display: flex;
   justify-content: space-between;
@@ -685,21 +682,21 @@ body {
   align-items: center;
 }
 
-.advantages__item {
+.advantages__list .advantages__item {
   width: 360px;
 }
 
-.advantages__item-img-wpr {
+.advantages__list .advantages__item-img-wpr {
   width: 50px;
   margin: 0 auto;
 }
 
-.advantages__item-img {
+.advantages__list .advantages__item-img {
   height: 36px;
   text-align: center;
 }
 
-.advantages__item-tetle {
+.advantages__list .advantages__item-tetle {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -709,7 +706,7 @@ body {
   margin-top: 24px;
 }
 
-.advantages__item-text {
+.advantages__list .advantages__item-text {
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;

@@ -355,20 +355,21 @@ body {
   margin-top: 20px;
 }
 
-.nav-item__title__title-link {
+.nav-item__title-link {
   text-decoration: none;
   color: #F16D7F;
 }
 
-.nav-item__title__title-link:hover, .nav-item__title__title-link:focus {
+.nav-item__title-link:hover,
+.nav-item__title-link:focus {
   color: #db4c5f;
 }
 
-.nav-item__title__title-link:active {
+.nav-item__title-link:active {
   color: #ff8901;
 }
 
-.nav-item__title__item {
+.nav-item__item {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -376,16 +377,17 @@ body {
   padding-left: 21px;
 }
 
-.nav-item__title__item-link {
+.nav-item__item-link {
   text-decoration: none;
   color: #6F6E6E;
 }
 
-.nav-item__title__item-link:hover, .nav-item__title__item-link:focus {
+.nav-item__item-link:hover,
+.nav-item__item-link:focus {
   color: #4e4e4e;
 }
 
-.nav-item__title__item-link:active {
+.nav-item__item-link:active {
   color: #ff8901;
 }
 

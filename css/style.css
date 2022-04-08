@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+    v2.0 | 20110126
+    License: none (public domain)
 */
 html,
 body,
@@ -175,10 +175,13 @@ body {
   min-height: 75px;
   align-items: center;
   justify-content: space-between;
+  max-width: 1204px;
+  margin: 0 auto;
 }
 
 .header__conteiner {
   display: flex;
+  margin-left: 32px;
 }
 
 .header__search {
@@ -231,6 +234,7 @@ body {
 .header__manu-list {
   display: flex;
   align-items: center;
+  margin-right: 32px;
 }
 
 .header__burger {
@@ -404,7 +408,7 @@ body {
 }
 
 .brand__img {
-  width: 800px;
+  width: 50%;
 }
 
 .brand__title {
@@ -423,6 +427,16 @@ body {
   position: relative;
 }
 
+@media (max-width: 1023px) {
+  .brand__title {
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 900;
+    font-style: normal;
+    margin-left: 80px;
+  }
+}
+
 .brand__title:before {
   content: '';
   width: 12px;
@@ -431,7 +445,12 @@ body {
   top: 4px;
   left: -28px;
   background-image: url(../img/rectangle.svg);
-  background-size: 12px 92px;
+}
+
+@media (max-width: 1023px) {
+  .brand__title:before {
+    height: 78px;
+  }
 }
 
 .brand__title-lower {
@@ -445,6 +464,15 @@ body {
         font-weight: 700;
         */
   display: block;
+}
+
+@media (max-width: 1023px) {
+  .brand__title-lower {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 900;
+    font-style: normal;
+  }
 }
 
 .brand__title-pink {

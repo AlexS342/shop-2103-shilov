@@ -7,10 +7,13 @@
         min-height: 75px;
         align-items: center;
         justify-content: space-between;
+        max-width: 1140px + 64px;
+        margin: 0 auto;
     }
 
     &__conteiner {
         display: flex;
+        margin-left: 32px;
     }
 
     &__search {
@@ -64,6 +67,7 @@
     &__manu-list {
         display: flex;
         align-items: center;
+        margin-right: 32px;
     }
 
     &__burger {

@@ -496,40 +496,35 @@ body {
 }
 
 .sales__item {
+  background-color: #4e4544;
+  position: relative;
+  width: 31%;
+  line-height: 0;
+}
+
+.sales__item--accesories {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.sales__sub-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  align-content: center;
   justify-content: center;
   align-items: center;
-  width: 31.6%;
-  height: 260px;
-  background-color: #4e4544;
 }
 
-@media (max-width: 768px) {
-  .sales__item {
-    height: 167px;
-  }
+.sales__item-img {
+  width: 100%;
 }
 
-.sales__item--woman {
-  background-image: url(../img/woman-sales.jpg);
-  background-position: center;
-}
-
-.sales__item--man {
-  background-image: url(../img/man-sales.jpg);
-  background-position: center;
-}
-
-.sales__item--kids {
-  background-image: url(../img/kids-sales.jpg);
-  background-position: center;
-}
-
-.sales__item--shoes {
-  background-image: url(../img/accesories-sales.jpg);
-  background-size: cover;
-  margin-top: 30px;
+.sales__item-img--accesories {
   width: 100%;
 }
 

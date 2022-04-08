@@ -14,38 +14,35 @@
     }
 
     &__item {
+        background-color: $sales-bkg;
+        position: relative;
+        width: 31%;
+        line-height: 0;
+    }
+
+    &__item--accesories {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    &__sub-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
+        align-content: center;
         justify-content: center;
         align-items: center;
-        width: 31.6%;
-        height: 260px;
-        background-color: $sales-bkg;
-
-        @media (max-width:768px) {
-            height: 167px;
-        }
     }
 
-    &__item--woman {
-        background-image: url(../img/woman-sales.jpg);
-        background-position: center;
+    &__item-img {
+        width: 100%;
     }
 
-    &__item--man {
-        background-image: url(../img/man-sales.jpg);
-        background-position: center;
-    }
-
-    &__item--kids {
-        background-image: url(../img/kids-sales.jpg);
-        background-position: center;
-    }
-
-    &__item--shoes {
-        background-image: url(../img/accesories-sales.jpg);
-        background-size: cover;
-        margin-top: 30px;
+    &__item-img--accesories {
         width: 100%;
     }
 

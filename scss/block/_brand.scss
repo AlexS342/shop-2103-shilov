@@ -1,0 +1,47 @@
+.brand {
+    display: flex;
+    background-color: $pink-bkg;
+    align-items: center;
+
+    &__img {
+        width: 800px;
+    }
+
+    &__title {
+        @include font(48px, 57px, 900);
+        /*
+        font-size: 48px;
+        line-height: 57px;
+        font-weight: 900;
+        */
+        text-transform: uppercase;
+        margin-left: 92px;
+        color: $black-color;
+        position: relative;
+    }
+
+    &__title:before {
+        content: '';
+        width: 12px;
+        height: 92px;
+        position: absolute;
+        top: 4px;
+        left: -28px;
+        background-image: url(../img/rectangle.svg);
+        background-size: 12px 92px;
+    }
+
+    &__title-lower {
+        @include font(32px, 38px, 700);
+        /*
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 700;
+        */
+        display: block;
+    }
+
+    &__title-pink {
+        color: $pink-color;
+    }
+}

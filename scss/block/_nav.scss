@@ -1,0 +1,39 @@
+.nav-item__title {
+    @include font();
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.nav-item__title-link {
+    text-decoration: none;
+    color: $pink-color;
+}
+
+.nav-item__title-link:hover,
+.nav-item__title-link:focus {
+    color: $nav-pink-color-hover;
+}
+
+.nav-item__title-link:active {
+    color: $white-color-active;
+}
+
+.nav-item__item {
+    @include font();
+    margin-top: 11px;
+    padding-left: 21px;
+}
+
+.nav-item__item-link {
+    text-decoration: none;
+    color: $nav-gray-color;
+}
+
+.nav-item__item-link:hover,
+.nav-item__item-link:focus {
+    color: $nav-gray-color-hover;
+}
+
+.nav-item__item-link:active {
+    color: $white-color-active;
+}

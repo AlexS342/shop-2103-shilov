@@ -1,62 +1,64 @@
 .sales {
     margin-top: 65px;
-}
 
-.sales__list {
-    display: flex;
-    flex-direction: column;
-}
 
-.sales__item-wpr {
-    display: flex;
-    justify-content: space-between;
-}
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
 
-.sales__item {
-    width: 360px;
-    height: 260px;
-    background-color: $sales-bkg;
-}
+    &__item-wpr {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.sales__item--woman {
-    background-image: url(../img/woman-sales.jpg);
-}
+    &__item {
+        width: 360px;
+        height: 260px;
+        background-color: $sales-bkg;
+    }
 
-.sales__item--man {
-    background-image: url(../img/man-sales.jpg);
-}
+    &__item--woman {
+        background-image: url(../img/woman-sales.jpg);
+    }
 
-.sales__item--kids {
-    background-image: url(../img/kids-sales.jpg);
-}
+    &__item--man {
+        background-image: url(../img/man-sales.jpg);
+    }
 
-.sales__item--shoes {
-    width: 1140px;
-    background-image: url(../img/accesories-sales.jpg);
-    margin-top: 30px;
-}
+    &__item--kids {
+        background-image: url(../img/kids-sales.jpg);
+    }
 
-.sales__item-title {
-    text-transform: uppercase;
-    color: $white-color;
-    margin-top: 105px;
-    @include font(16px, 19px, 700);
-    /*
+    &__item--shoes {
+        width: 1140px;
+        background-image: url(../img/accesories-sales.jpg);
+        margin-top: 30px;
+    }
+
+    &__item-title {
+        text-transform: uppercase;
+        color: $white-color;
+        margin-top: 105px;
+        @include font(16px, 19px, 700);
+        /*
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
     */
-    text-align: center;
-}
+        text-align: center;
+    }
 
-.sales__item-text {
-    @include font(24px, 29px, 700);
-    /*
+    &__item-text {
+        @include font(24px, 29px, 700);
+        /*
     font-size: 24px;
     line-height: 29px;
     font-weight: 700;
     */
-    text-align: center;
-    text-transform: uppercase;
-    color: $pink-color;
+        text-align: center;
+        text-transform: uppercase;
+        color: $pink-color;
+    }
+
 }

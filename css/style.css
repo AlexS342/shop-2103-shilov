@@ -1143,6 +1143,12 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  .registration__title {
+    justify-content: center;
+  }
+}
+
 .registration__wrp {
   display: flex;
   justify-content: space-between;

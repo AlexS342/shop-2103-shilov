@@ -17,6 +17,10 @@
         text-align: left;
         color: $pink-color;
         text-transform: uppercase;
+
+        @media (max-width: 767px) {
+            justify-content: center
+        }
     }
 
     &__wrp {

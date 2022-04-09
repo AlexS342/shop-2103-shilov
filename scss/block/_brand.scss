@@ -5,6 +5,10 @@
 
     &__img {
         width: 50%;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     &__title {
@@ -22,6 +26,10 @@
         @media (max-width: 1023px) {
             @include font(44px, 52px, 900);
             margin-left: 80px;
+        }
+
+        @media (max-width: 767px) {
+            @include font(38px, 46px, 900);
         }
     }
 
@@ -50,6 +58,10 @@
 
         @media (max-width: 1023px) {
             @include font(24px, 28px, 900);
+        }
+
+        @media (max-width: 767px) {
+            @include font(20px, 24px, 900);
         }
     }
 

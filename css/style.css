@@ -438,6 +438,12 @@ body {
   width: 50%;
 }
 
+@media (max-width: 767px) {
+  .brand__img {
+    display: none;
+  }
+}
+
 .brand__title {
   font-size: 48px;
   line-height: 57px;
@@ -461,6 +467,15 @@ body {
     font-weight: 900;
     font-style: normal;
     margin-left: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand__title {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: normal;
   }
 }
 
@@ -497,6 +512,15 @@ body {
   .brand__title-lower {
     font-size: 24px;
     line-height: 28px;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand__title-lower {
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 900;
     font-style: normal;
   }

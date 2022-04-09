@@ -1,6 +1,15 @@
 .sales {
     margin-top: 65px;
 
+    @media (max-width: 1023px) {
+        margin-top: 20px;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 64px;
+    }
+
+
 
     &__list {
         display: flex;
@@ -11,6 +20,11 @@
         display: flex;
         justify-content: space-between;
         flex-grow: 1;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            margin: 0 auto;
+        }
     }
 
     &__item {
@@ -18,11 +32,23 @@
         position: relative;
         width: 31%;
         line-height: 0;
+
+        @media (max-width: 767px) {
+            width: 360px;
+            height: 260px;
+            margin-bottom: 32px;
+        }
     }
 
     &__item--accesories {
         width: 100%;
         margin-top: 30px;
+
+        @media (max-width: 767px) {
+            margin-top: 0;
+            width: 360px;
+            height: 111px;
+        }
     }
 
     &__sub-item {
@@ -40,10 +66,20 @@
 
     &__item-img {
         width: 100%;
+
+        @media (max-width: 767px) {
+            width: 360px;
+            height: 260px;
+        }
     }
 
     &__item-img--accesories {
         width: 100%;
+
+        @media (max-width: 767px) {
+            height: 111px;
+            object-fit: cover;
+        }
     }
 
     &__item-title {

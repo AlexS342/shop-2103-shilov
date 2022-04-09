@@ -1,0 +1,22 @@
+.sub-header {
+    background-color: #F8F3F4;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        height: 148px;
+        @include font(24px, 29px);
+        /*
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+*/
+        text-align: left;
+        color: $pink-color;
+        text-transform: uppercase;
+
+        @media (max-width: 767px) {
+            justify-content: center
+        }
+    }
+}

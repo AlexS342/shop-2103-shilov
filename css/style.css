@@ -432,6 +432,7 @@ body {
   display: flex;
   background-color: #F1E4E6;
   align-items: center;
+  min-height: 363px;
 }
 
 .brand__img {

@@ -1,6 +1,13 @@
+html {
+    background-color: #E5E5E5;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     @include font();
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: white;
 }
 
 .all-wrapper {

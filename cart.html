@@ -219,7 +219,6 @@
                 <div class="cart__conteiner">
                     <div class="cart-product">
                         <h2 class="visually-hidden">Cart product</h2>
-                        <!--++++++++++++++++++++++++++++++++++++++++++++-->
                         <div class="cart-product__item">
                             <img class="cart-product__item-img" src="img/man2-poducts.jpg" alt="foto">
                             <div class="cart-product__item-info">
@@ -235,7 +234,7 @@
                                 </p>
                                 <label class="cart-product__item-info-text--label" for="order">
                                     <p class="cart-product__item-info-text">Quantity:</p>
-                                    <input class="cart-product__item-info--input" type="number">
+                                    <input class="cart-product__item-info--input" min="1" max="9" type="number">
                                 </label>
                             </div>
                             <div class="cart-product__item-cloes">
@@ -261,9 +260,8 @@
                                 </button>
                             </div>
                         </div>
-                        <!--++++++++++++++++++++++++++++++++++++++++++++++++-->
                         <div class="cart-product__item">
-                            <img class="cart-product__item-img" src="img/man2-poducts.jpg" alt="foto">
+                            <img class="cart-product__item-img" src="img/man4-poducts.jpg" alt="foto">
                             <div class="cart-product__item-info">
                                 <h3 class="cart-product__item-info-title">mango people t&#8209;shirt</h3>
                                 <p class="cart-product__item-info-text">Price: <span
@@ -277,7 +275,7 @@
                                 </p>
                                 <label class="cart-product__item-info-text--label" for="order">
                                     <p class="cart-product__item-info-text">Quantity:</p>
-                                    <input class="cart-product__item-info--input" type="number">
+                                    <input class="cart-product__item-info--input" min="1" max="9" type="number">
                                 </label>
                             </div>
                             <div class="cart-product__item-cloes">
@@ -329,8 +327,10 @@
                         </div>
                         <div class="cart-form__input">
                             <h3 class="visually-hidden">total</h3>
-                            <p class="cart-form__input-sub">sub total<span>$900</span></p>
-                            <p class="cart-form__input-grand">grand total<span>$900</span></p>
+                            <p class="cart-form__input-sub">sub total<span
+                                    class="cart-form__input-sub--price">$900</span></p>
+                            <p class="cart-form__input-grand">grand total<span
+                                    class="cart-form__input-grand--price">$900</span></p>
                             <hr class="cart-form__input-hr">
                             <button class="cart-form__input-button">proceed to checkout</button>
                         </div>

@@ -1633,4 +1633,8 @@ line-height: 29px;
 .down-footer__icon:active > .down-footer__icon-bkg {
   fill: #ff8901;
 }
+
+.cart__conteiner {
+  display: flex;
+}
 /*# sourceMappingURL=style.css.map */

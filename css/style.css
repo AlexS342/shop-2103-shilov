@@ -1656,11 +1656,31 @@ line-height: 29px;
   margin-bottom: 128px;
 }
 
+@media (max-width: 1023px) {
+  .cart__conteiner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cart-product {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .cart-product__item {
   display: flex;
   width: 652px;
   margin-bottom: 40px;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+}
+
+@media (max-width: 1023px) {
+  .cart-product__item {
+    width: 734px;
+  }
 }
 
 .cart-product__item-img {
@@ -1769,6 +1789,12 @@ line-height: 29px;
   justify-content: space-between;
 }
 
+@media (max-width: 1023px) {
+  .cart-product__actions {
+    justify-content: space-evenly;
+  }
+}
+
 .cart-product__actions-button {
   border: 1px solid #A4A4A4;
   height: 50px;
@@ -1795,6 +1821,21 @@ line-height: 29px;
   width: 360px;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 1023px) {
+  .cart-form {
+    justify-content: space-evenly;
+    margin-top: 64px;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cart-form__output {
+    max-width: 360px;
+  }
 }
 
 .cart-form__output-title {
@@ -1856,7 +1897,13 @@ line-height: 29px;
 .cart-form__input {
   margin-top: 56px;
   background-color: #F5F3F3;
-  padding: 39px 42px;
+}
+
+@media (max-width: 1023px) {
+  .cart-form__input {
+    width: 360px;
+    margin-top: 39px;
+  }
 }
 
 .cart-form__input-sub {
@@ -1867,6 +1914,8 @@ line-height: 29px;
   text-transform: uppercase;
   color: #4A4A4A;
   text-align: right;
+  margin-top: 39px;
+  margin-right: 34px;
 }
 
 .cart-form__input-sub--price {
@@ -1881,7 +1930,7 @@ line-height: 29px;
   color: #222222;
   text-transform: uppercase;
   text-align: right;
-  margin: 12px 0 21px 0;
+  margin: 12px 37px 21px 0;
 }
 
 .cart-form__input-grand--price {
@@ -1899,15 +1948,23 @@ line-height: 29px;
   height: 1px;
   background-color: #E2E2E2;
   margin: 0;
+  max-width: 275px;
+  margin: 0 auto;
+}
+
+.cart-form__input-button-wrp {
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+  margin-bottom: 42px;
 }
 
 .cart-form__input-button {
   height: 50px;
-  width: 100%;
+  width: 275px;
   border: none;
   border-radius: 0;
   background-color: #F16D7F;
-  margin-top: 42px;
   font-size: 16px;
   line-height: 19px;
   font-weight: 300;

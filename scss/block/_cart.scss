@@ -26,10 +26,24 @@
         margin: 22px 0 0 31px;
     }
 
+    &-product__item-link {
+        text-decoration: none;
+    }
+
     &-product__item-info-title {
         @include font(24px, 29px);
         text-transform: uppercase;
         margin-bottom: 42px;
+        color: $black-color;
+    }
+
+    &-product__item-link:hover>.cart-product__item-info-title,
+    &-product__item-link:focus>.cart-product__item-info-title {
+        color: $white-color-hover;
+    }
+
+    &-product__item-link:active>.cart-product__item-info-title {
+        color: $white-color-active;
     }
 
     &-product__item-info-text {
@@ -63,6 +77,14 @@
         color: $cart-gray-color;
     }
 
+    &-product__item-info--input:hover {
+        outline: 1px solid $white-color-hover;
+    }
+
+    &-product__item-info--input:focus {
+        outline: 1px solid red;
+    }
+
     &-product__item-cloes {
         flex-grow: 1;
         background: none;
@@ -81,6 +103,15 @@
         cursor: pointer;
     }
 
+    &-product-item-cloes-button:hover,
+    &-product-item-cloes-button:focus {
+        background-color: $cart-gray-button;
+    }
+
+    &-product-item-cloes-button:active {
+        background-color: $white-color-active;
+    }
+
     &-product__actions {
         margin-top: 72px;
         display: flex;
@@ -95,6 +126,16 @@
         text-transform: uppercase;
         background-color: white;
         cursor: pointer;
+    }
+
+    &-product__actions-button:hover,
+    &-product__actions-button:focus {
+        background-color: $button-color;
+        color: $white-color;
+    }
+
+    &-product__actions-button:active {
+        opacity: 0.5;
     }
 
     &-form {
@@ -121,6 +162,14 @@
         box-sizing: border-box;
     }
 
+    &-form__output-input:hover {
+        outline: 1px solid $white-color-hover;
+    }
+
+    &-form__output-input:focus {
+        outline: 1px solid red;
+    }
+
     &-form__output-button {
         margin-top: 20px;
         min-width: 100Ppx;
@@ -132,6 +181,16 @@
         @include font(11px, 13px, 300);
         text-transform: uppercase;
         cursor: pointer;
+    }
+
+    &-form__output-button:hover,
+    &-form__output-button:focus {
+        background-color: $button-color;
+        color: $white-color;
+    }
+
+    &-form__output-button:active {
+        opacity: 0.5;
     }
 
 
@@ -185,5 +244,14 @@
         color: white;
         text-transform: uppercase;
         cursor: pointer;
+    }
+
+    &-form__input-button:hover,
+    &-form__input-button:focus {
+        background-color: #FF6A6A;
+    }
+
+    &-form__input-button:active {
+        opacity: 0.5;
     }
 }

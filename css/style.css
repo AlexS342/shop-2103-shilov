@@ -1673,6 +1673,10 @@ line-height: 29px;
   margin: 22px 0 0 31px;
 }
 
+.cart-product__item-link {
+  text-decoration: none;
+}
+
 .cart-product__item-info-title {
   font-size: 24px;
   line-height: 29px;
@@ -1680,6 +1684,16 @@ line-height: 29px;
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 42px;
+  color: #222222;
+}
+
+.cart-product__item-link:hover > .cart-product__item-info-title,
+.cart-product__item-link:focus > .cart-product__item-info-title {
+  color: #ffe08c;
+}
+
+.cart-product__item-link:active > .cart-product__item-info-title {
+  color: #ff8901;
 }
 
 .cart-product__item-info-text {
@@ -1715,6 +1729,14 @@ line-height: 29px;
   color: #656565;
 }
 
+.cart-product__item-info--input:hover {
+  outline: 1px solid #ffe08c;
+}
+
+.cart-product__item-info--input:focus {
+  outline: 1px solid red;
+}
+
 .cart-product__item-cloes {
   flex-grow: 1;
   background: none;
@@ -1731,6 +1753,14 @@ line-height: 29px;
   padding: 0;
   margin: 28px 22px;
   cursor: pointer;
+}
+
+.cart-product-item-cloes-button:hover, .cart-product-item-cloes-button:focus {
+  background-color: #A4A4A4;
+}
+
+.cart-product-item-cloes-button:active {
+  background-color: #ff8901;
 }
 
 .cart-product__actions {
@@ -1750,6 +1780,15 @@ line-height: 29px;
   text-transform: uppercase;
   background-color: white;
   cursor: pointer;
+}
+
+.cart-product__actions-button:hover, .cart-product__actions-button:focus {
+  background-color: #F26376;
+  color: #FFFFFF;
+}
+
+.cart-product__actions-button:active {
+  opacity: 0.5;
 }
 
 .cart-form {
@@ -1781,6 +1820,14 @@ line-height: 29px;
   box-sizing: border-box;
 }
 
+.cart-form__output-input:hover {
+  outline: 1px solid #ffe08c;
+}
+
+.cart-form__output-input:focus {
+  outline: 1px solid red;
+}
+
 .cart-form__output-button {
   margin-top: 20px;
   min-width: 100Ppx;
@@ -1795,6 +1842,15 @@ line-height: 29px;
   font-style: normal;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.cart-form__output-button:hover, .cart-form__output-button:focus {
+  background-color: #F26376;
+  color: #FFFFFF;
+}
+
+.cart-form__output-button:active {
+  opacity: 0.5;
 }
 
 .cart-form__input {
@@ -1859,5 +1915,13 @@ line-height: 29px;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.cart-form__input-button:hover, .cart-form__input-button:focus {
+  background-color: #FF6A6A;
+}
+
+.cart-form__input-button:active {
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */

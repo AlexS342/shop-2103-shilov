@@ -1,10 +1,17 @@
+html {
+    background-color: #E5E5E5;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     @include font();
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: white;
 }
 
 .all-wrapper {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -23,6 +30,11 @@ body {
 }
 
 .conteiner {
-    width: 1140px;
+    max-width: 1140px;
+    padding: 0 16px;
     margin: 0 auto;
+
+    @media (max-width: 767px) {
+        padding: 0;
+    }
 }

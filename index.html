@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shop-2103-shilov</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +16,8 @@
 <body>
     <div class="all-wrapper">
         <header class="header">
-            <div class="conteiner header__wrp">
+            <div class="header__wrp">
+                <!--<<-- conteiner-->
                 <div class="header__conteiner">
                     <a href="index.html">
                         <img class="header__logo" src="img/logo.png" alt="logo">
@@ -221,27 +221,41 @@
             <section class="sales">
                 <div class="conteiner">
                     <h2 class="visually-hidden">sales</h2>
-                    <ul class="sales__list">
+                    <div class="sales__list">
                         <div class="sales__item-wpr">
-                            <li class="sales__item sales__item--woman">
-                                <h3 class="sales__item-title">30% off</h3>
-                                <p class="sales__item-text">for woman</p>
-                            </li>
-                            <li class="sales__item sales__item--man">
-                                <h3 class="sales__item-title">hot deal</h3>
-                                <p class="sales__item-text">for man</p>
-                            </li>
-                            <li class="sales__item sales__item--kids">
-                                <p class="sales__item-title">new arrivals</p>
-                                <p class="sales__item-text">for kids</p>
-                            </li>
+                            <div class="sales__item">
+                                <img class="sales__item-img" src="img/woman-sales.jpg" alt="woman">
+                                <div class="sales__sub-item">
+                                    <h3 class="sales__item-title">30% off</h3>
+                                    <p class="sales__item-text">for woman</p>
+                                </div>
+                            </div>
+                            <div class="sales__item">
+                                <img class="sales__item-img" src="img/man-sales.jpg" alt="man">
+                                <div class="sales__sub-item">
+                                    <h3 class="sales__item-title">hot deal</h3>
+                                    <p class="sales__item-text">for man</p>
+                                </div>
+                            </div>
+                            <div class="sales__item">
+                                <img class="sales__item-img" src="img/kids-sales.jpg" alt="kids">
+                                <div class="sales__sub-item">
+                                    <p class="sales__item-title">new arrivals</p>
+                                    <p class="sales__item-text">for kids</p>
+                                </div>
+                            </div>
                         </div>
-                        <li class="sales__item sales__item--shoes">
-                            <h3 class="sales__item-title">luxirous & trendy</h3>
-                            <p class="sales__item-text">accesories</p>
-                        </li>
-                    </ul>
-                </div>
+                        <div class="sales__item-wpr">
+                            <div class="sales__item sales__item--accesories">
+                                <img class="sales__item-img--accesories" src="img/accesories-sales.jpg" alt="shoes">
+                                <div class="sales__sub-item">
+                                    <h3 class="sales__item-title">luxirous & trendy</h3>
+                                    <p class="sales__item-text">accesories</p>
+                                </div>
+                            </div>
+                        </div>
+                        </ul>
+                    </div>
             </section>
             <div class="conteiner">
                 <section class="products">

@@ -2,9 +2,14 @@
     display: flex;
     background-color: $pink-bkg;
     align-items: center;
+    min-height: 363px;
 
     &__img {
-        width: 800px;
+        width: 50%;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     &__title {
@@ -18,6 +23,15 @@
         margin-left: 92px;
         color: $black-color;
         position: relative;
+
+        @media (max-width: 1023px) {
+            @include font(44px, 52px, 900);
+            margin-left: 80px;
+        }
+
+        @media (max-width: 767px) {
+            @include font(38px, 46px, 900);
+        }
     }
 
     &__title:before {
@@ -28,7 +42,10 @@
         top: 4px;
         left: -28px;
         background-image: url(../img/rectangle.svg);
-        background-size: 12px 92px;
+
+        @media (max-width: 1023px) {
+            height: 78px;
+        }
     }
 
     &__title-lower {
@@ -39,6 +56,14 @@
         font-weight: 700;
         */
         display: block;
+
+        @media (max-width: 1023px) {
+            @include font(24px, 28px, 900);
+        }
+
+        @media (max-width: 767px) {
+            @include font(20px, 24px, 900);
+        }
     }
 
     &__title-pink {

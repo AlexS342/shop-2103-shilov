@@ -2,24 +2,41 @@
     background-image: url(../img/footer-bkg.jpg);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (max-width: 1023px) {
+        background-size: auto 693px;
+        background-position: -415px 0px;
+    }
 }
 
 .quote {
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 614px;
+    }
+
 
     &__wrapper {
         display: flex;
         flex-direction: column;
-        width: 360px;
+        max-width: 360px;
         min-height: 448px;
         justify-content: center;
+
+        @media (max-width: 1023px) {
+            min-height: 100px;
+        }
     }
 
     &__wrapper-img {
         width: 96px;
         margin: 0 auto;
+        margin-top: 64px;
     }
 
     &__wrapper-text {
@@ -49,6 +66,10 @@
         text-align: center;
         text-transform: uppercase;
         color: $sub-black-color;
+
+        @media (max-width: 1023px) {
+            margin-top: 48px;
+        }
     }
 
     &__wrapper-sub-title {

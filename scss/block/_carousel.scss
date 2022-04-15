@@ -1,4 +1,5 @@
 .carousel-block {
+    max-width: 100%;
     height: 777px;
     margin: 0 auto;
     padding-top: 10px;
@@ -7,16 +8,27 @@
 }
 
 .carousel-block__bootstrap {
-    width: 597px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
-.carousel-block__item {
+.carousel-item {
     width: 100%;
+}
+
+.carousel-item.active {
+    display: flex;
+    justify-content: center;
 }
 
 .carousel-block__img {
     width: 597px;
     height: 724px;
     margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: white;
+    background-color: gray;
 }

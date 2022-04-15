@@ -2018,4 +2018,22 @@ line-height: 29px;
 .cart-form__input-button:active {
   opacity: 0.5;
 }
+
+.carousel-block {
+  max-height: 777px;
+  padding-top: 10px;
+  padding-bottom: 42px;
+}
+
+.carousel-block__list {
+  width: 100%;
+}
+
+.carousel-block__item {
+  max-width: 597px;
+}
+
+.carousel-block__img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

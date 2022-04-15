@@ -19,7 +19,8 @@
         "../scss/block/_quote.scss",
         "../scss/block/_down-footer.scss",
         "../scss/block/_cart.scss",
-        "../scss/block/_carousel.scss"
+        "../scss/block/_carousel.scss",
+        "../scss/block/_purchase.scss"
     ],
     "names": [],
     "file": "style.css"

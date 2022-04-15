@@ -2020,20 +2020,25 @@ line-height: 29px;
 }
 
 .carousel-block {
-  max-height: 777px;
+  height: 777px;
+  margin: 0 auto;
   padding-top: 10px;
-  padding-bottom: 42px;
+  box-sizing: border-box;
+  background-color: #F7F7F7;
 }
 
-.carousel-block__list {
-  width: 100%;
+.carousel-block__bootstrap {
+  width: 597px;
+  margin: 0 auto;
 }
 
 .carousel-block__item {
-  max-width: 597px;
+  width: 100%;
 }
 
 .carousel-block__img {
-  width: 100%;
+  width: 597px;
+  height: 724px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

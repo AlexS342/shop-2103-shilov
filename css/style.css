@@ -2038,7 +2038,7 @@ line-height: 29px;
 }
 
 .carousel-block__bootstrap {
-  max-width: 1140px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -2061,5 +2061,13 @@ line-height: 29px;
 .carousel-control-next-icon {
   color: white;
   background-color: gray;
+}
+
+.carousel-control-prev {
+  justify-content: flex-start;
+}
+
+.carousel-control-next {
+  justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */

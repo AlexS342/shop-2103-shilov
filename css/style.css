@@ -244,6 +244,15 @@ line-height: 29px;
   font-style: normal;
 }
 
+.sub-header__item:hover > .sub-header__item-link,
+.sub-header__item:focus > .sub-header__item-link {
+  color: #ffe08c;
+}
+
+.sub-header__item:active > .sub-header__item-link {
+  color: #ff8901;
+}
+
 .header {
   background-color: #222222;
   position: relative;

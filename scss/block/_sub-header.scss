@@ -48,4 +48,13 @@ line-height: 29px;
         color: $pink-color;
         @include font(14px, 16px, 700);
     }
+
+    &__item:hover>.sub-header__item-link,
+    &__item:focus>.sub-header__item-link {
+        color: $white-color-hover;
+    }
+
+    &__item:active>.sub-header__item-link {
+        color: $white-color-active;
+    }
 }

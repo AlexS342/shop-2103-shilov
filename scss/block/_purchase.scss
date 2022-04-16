@@ -25,6 +25,18 @@
     text-transform: uppercase;
     margin-top: 27px;
     color: $cart-gray-totol;
+    position: relative;
+}
+
+.purchase__title-decor {
+    width: 63px;
+    height: 3px;
+    background-color: $pink-color;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform-origin: left;
+    transform: translateX(-50%);
 }
 
 .purchase__text {
@@ -51,7 +63,7 @@
 
 .purchase__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 400px;
 }
 
@@ -59,6 +71,10 @@
     @include font(14px, 17px, 400);
     color: $nav-gray-color;
     text-transform: uppercase;
+}
+
+.purchase__item>i {
+    margin-left: 9px;
 }
 
 .purchase__button {
@@ -75,6 +91,21 @@
 .purchase__button-basket-icon>path {
     fill: $button-color;
     margin-right: 24px;
+}
+
+.purchase__button:hover,
+.purchase__button:focus {
+    background-color: $button-color;
+    color: $white-color;
+}
+
+.purchase__button:hover>.purchase__button-basket-icon>path,
+.purchase__button:focus>.purchase__button-basket-icon>path {
+    fill: $white-color;
+}
+
+.purchase__button:active {
+    opacity: 0.5;
 }
 
 .purchase-products {

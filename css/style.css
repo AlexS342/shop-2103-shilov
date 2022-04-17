@@ -179,6 +179,57 @@ body {
   }
 }
 
+@keyframes could {
+  from {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  45% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .sub-header {
   background-color: #F8F3F4;
 }
@@ -618,6 +669,10 @@ line-height: 29px;
   color: #F16D7F;
 }
 
+.brand__title:hover {
+  animation: could 0.4s ease-in-out;
+}
+
 .sales {
   margin-top: 65px;
 }
@@ -866,6 +921,7 @@ line-height: 29px;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: could 0.4s ease-in-out;
 }
 
 .products__button-wpr {
@@ -937,6 +993,10 @@ line-height: 29px;
     */
   line-height: 17px;
   color: #FFFFFF;
+}
+
+.products__button:hover {
+  animation: rotation 0.2s linear;
 }
 
 .products {
@@ -1060,6 +1120,7 @@ line-height: 29px;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: could 0.4s ease-in-out;
 }
 
 .products__button-wpr {
@@ -1131,6 +1192,10 @@ line-height: 29px;
     */
   line-height: 17px;
   color: #FFFFFF;
+}
+
+.products__button:hover {
+  animation: rotation 0.2s linear;
 }
 
 .advantages__wpr {

@@ -104,6 +104,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        animation: could 0.4s ease-in-out;
     }
 
     &__button-wpr {
@@ -175,4 +176,9 @@
         line-height: 17px;
         color: $white-color;
     }
+}
+
+
+.products__button:hover {
+    animation: rotation 0.2s linear;
 }

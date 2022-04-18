@@ -181,34 +181,7 @@ body {
 
 @keyframes could {
   from {
-    opacity: 1;
-  }
-  5% {
     opacity: 0;
-  }
-  20% {
-    opacity: 0.5;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  45% {
-    opacity: 0.9;
-  }
-  50% {
-    opacity: 0.4;
-  }
-  60% {
-    opacity: 0.8;
-  }
-  80% {
-    opacity: 0.6;
-  }
-  85% {
-    opacity: 0.5;
-  }
-  95% {
-    opacity: 0.2;
   }
   to {
     opacity: 1;
@@ -342,6 +315,7 @@ line-height: 29px;
 
 .header__search-icon {
   fill: #FFFFFF;
+  transition: fill 0.5s linear;
 }
 
 .header__search-icon:hover, .header__search-icon:focus {
@@ -402,6 +376,7 @@ line-height: 29px;
 
 .header__burger-icon {
   fill: #FFFFFF;
+  transition: fill 0.5s linear;
 }
 
 .header__burger-icon:hover, .header__burger-icon:focus {
@@ -428,6 +403,7 @@ line-height: 29px;
 
 .header__person-icon {
   fill: #FFFFFF;
+  transition: fill 0.5s linear;
 }
 
 .header__person-icon:hover, .header__person-icon:focus {
@@ -440,6 +416,7 @@ line-height: 29px;
 
 .header__basket-icon {
   fill: #FFFFFF;
+  transition: fill 0.5s linear;
 }
 
 .header__basket-icon:hover, .header__basket-icon:focus {
@@ -972,6 +949,7 @@ line-height: 29px;
 
 .products-hover__button:hover, .products-hover__button:focus {
   background-color: rgba(33, 33, 0, 0.5);
+  animation: rotation 0.2s ease;
 }
 
 .products-hover__button:active {
@@ -1171,6 +1149,7 @@ line-height: 29px;
 
 .products-hover__button:hover, .products-hover__button:focus {
   background-color: rgba(33, 33, 0, 0.5);
+  animation: rotation 0.2s ease;
 }
 
 .products-hover__button:active {
@@ -1738,6 +1717,12 @@ line-height: 29px;
 
 .down-footer__icon-bkg {
   fill: #FFFFFF;
+  transition: fill 0.5s ease;
+}
+
+.down-footer__icon-simbol {
+  fill: black;
+  transition: fill 0.5s ease;
 }
 
 .down-footer__icon:hover > .down-footer__icon-simbol,

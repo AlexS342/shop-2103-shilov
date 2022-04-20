@@ -33,6 +33,7 @@
 
     &__search-icon {
         fill: $white-color;
+        transition: fill 0.5s linear;
     }
 
     &__search-icon:hover,
@@ -86,10 +87,12 @@
     &__burger {
         border: none;
         background: transparent;
+
     }
 
     &__burger-icon {
         fill: $white-color;
+        transition: fill 0.5s linear;
     }
 
     &__burger-icon:hover,
@@ -115,6 +118,7 @@
 
     &__person-icon {
         fill: $white-color;
+        transition: fill 0.5s linear;
     }
 
     &__person-icon:hover,
@@ -128,6 +132,7 @@
 
     &__basket-icon {
         fill: $white-color;
+        transition: fill 0.5s linear;
     }
 
     &__basket-icon:hover,

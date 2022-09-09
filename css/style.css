@@ -1,4 +1,44 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Lato';
+  src: url("../font/Lato-Black.eot");
+  src: url("../font/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Black.woff2") format("woff2"), url("../font/Lato-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../font/Lato-Italic.eot");
+  src: url("../font/Lato-Italic.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Italic.woff2") format("woff2"), url("../font/Lato-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../font/Lato-Bold.eot");
+  src: url("../font/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Bold.woff2") format("woff2"), url("../font/Lato-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../font/Lato-Light.eot");
+  src: url("../font/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Light.woff2") format("woff2"), url("../font/Lato-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../font/Lato-Regular.eot");
+  src: url("../font/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Lato-Regular.woff2") format("woff2"), url("../font/Lato-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
@@ -179,6 +219,30 @@ body {
   }
 }
 
+@keyframes could {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .sub-header {
   background-color: #F8F3F4;
 }
@@ -291,6 +355,7 @@ line-height: 29px;
 
 .header__search-icon {
   fill: #FFFFFF;
+  transition: fill 0.5s linear;
 }
 
 .header__search-icon:hover, .header__search-icon:focus {
@@ -351,6 +416,7 @@ line-height: 29px;
 
 .header__burger-icon {
   fill: #FFFFFF;
+  transition: fill 0.5s linear;
 }
 
 .header__burger-icon:hover, .header__burger-icon:focus {
@@ -377,6 +443,7 @@ line-height: 29px;
 
 .header__person-icon {
   fill: #FFFFFF;
+  transition: fill 0.5s linear;
 }
 
 .header__person-icon:hover, .header__person-icon:focus {
@@ -389,6 +456,7 @@ line-height: 29px;
 
 .header__basket-icon {
   fill: #FFFFFF;
+  transition: fill 0.5s linear;
 }
 
 .header__basket-icon:hover, .header__basket-icon:focus {
@@ -616,6 +684,10 @@ line-height: 29px;
 
 .brand__title-pink {
   color: #F16D7F;
+}
+
+.brand__title:hover {
+  animation: could 0.4s ease-in-out;
 }
 
 .sales {
@@ -866,6 +938,7 @@ line-height: 29px;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: could 0.4s ease-in-out;
 }
 
 .products__button-wpr {
@@ -916,6 +989,7 @@ line-height: 29px;
 
 .products-hover__button:hover, .products-hover__button:focus {
   background-color: rgba(33, 33, 0, 0.5);
+  animation: rotation 0.2s ease;
 }
 
 .products-hover__button:active {
@@ -937,6 +1011,10 @@ line-height: 29px;
     */
   line-height: 17px;
   color: #FFFFFF;
+}
+
+.products__button:hover {
+  animation: rotation 0.2s linear;
 }
 
 .products {
@@ -1060,6 +1138,7 @@ line-height: 29px;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: could 0.4s ease-in-out;
 }
 
 .products__button-wpr {
@@ -1110,6 +1189,7 @@ line-height: 29px;
 
 .products-hover__button:hover, .products-hover__button:focus {
   background-color: rgba(33, 33, 0, 0.5);
+  animation: rotation 0.2s ease;
 }
 
 .products-hover__button:active {
@@ -1131,6 +1211,10 @@ line-height: 29px;
     */
   line-height: 17px;
   color: #FFFFFF;
+}
+
+.products__button:hover {
+  animation: rotation 0.2s linear;
 }
 
 .advantages__wpr {
@@ -1673,6 +1757,12 @@ line-height: 29px;
 
 .down-footer__icon-bkg {
   fill: #FFFFFF;
+  transition: fill 0.5s ease;
+}
+
+.down-footer__icon-simbol {
+  fill: black;
+  transition: fill 0.5s ease;
 }
 
 .down-footer__icon:hover > .down-footer__icon-simbol,
